@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 500px;
+            height: auto;
+            border: 1px solid rgb(244, 238, 238);
+            border-radius: 10px;
+            padding: 10px;
+            margin: auto;
+            box-sizing:border-box;
+            /*background-color: rgb(162, 163, 163);*/
+            background-image: url(../images/Darth\ vader.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        label{
+            display: block;
+        }
+        input[type="text"], input[type="email"], input[type="password"], select, textarea{
+            width: 100%;
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin-bottom: 15px;
+        }
+        input[type="submit"]{
+            color: rgb(251, 3, 3);
+            border: 2px solid white;
+            border-radius: 15px;
+            background-color: black;
+            width: 100%;
+            padding: 12px;
+            font-size: 25px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter Name">
+        <!--<label for="email">Email:</label>-->
+        <input type="email" name="email" id="email" placeholder="Enter Email">
+        <!--<label for="password" >Password:</label>-->
+        <input type="password" name="password" id="password" placeholder="Enter Password">
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">Male
+        <input type="radio" id="female" name="gender" value="female">Female
+        <label for="cities">Select city</label>
+        <select id="cities" name="cities">
+            <option value="select">SELECT</option>
+            <option value="Pune">Pune</option>
+            <option value="mumbai">mumbai</option>
+            <option value="noida">Noida</option>
+        </select>
+        <label>
+            <input type="checkbox" name="prolang"  value="cpp">C++
+        </label>
+        <label>
+            <input type="checkbox" name="prolang"  value="python">Python
+        </label>
+        <label for="address">Address:</label>
+        <textarea type="text" id="address" rows="4"></textarea>
+        <label for="upload">Upload File:</label>
+        <input type="file" id="upload" value="Choose file">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
